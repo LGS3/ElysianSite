@@ -1,0 +1,67 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003399; /* Deep bright blue */
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 5rem 0;
+}
+
+/* Hero */
+#hero {
+  background-color: #003399;
+  color: #ffffff;
+  text-align: center;
+  padding-top: calc(5rem + 60px); /* Header height adjustment */
+}
+
+#hero .cta {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #003399;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* About, Services, Contact */
+#about,
+#services,
+#contact {
+  text-align: center;
+}
