@@ -67,8 +67,8 @@ h2:hover {
   bottom: 0;
   background-image: repeating-linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2) 2px,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.6) 2px,
     transparent 2px,
     transparent 5px
   );
