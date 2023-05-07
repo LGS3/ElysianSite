@@ -70,8 +70,8 @@ h2:hover {
     0deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px,
-    transparent 3px
+    transparent 2px,
+    transparent 5px
   );
   pointer-events: none;
   z-index: 9999;
