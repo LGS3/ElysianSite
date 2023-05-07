@@ -30,7 +30,7 @@ class ScanLines {
   }
 
   update() {
-    this.el.style.opacity = Math.random() * 0.1;
+    this.el.style.opacity = Math.random() * 0.5;
   }
 
   start() {
