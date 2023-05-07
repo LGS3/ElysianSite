@@ -67,8 +67,8 @@ h2:hover {
   bottom: 0;
   background-image: repeating-linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1) 1px,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2) 2px,
     transparent 2px,
     transparent 5px
   );
@@ -79,9 +79,9 @@ h2:hover {
 /* Center and scale the image */
 #crest {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.5); /* Scale down the image to 50% */
+  top: 67%;
+  left: 67%;
+  transform: translate(-50%, -50%) scale(0.75); /* Scale down the image to 50% */
   z-index: 999;
 }
 
