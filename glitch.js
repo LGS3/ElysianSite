@@ -17,10 +17,31 @@ class Glitch {
   start() {
     setInterval(this.update, 50);
   }
+}class Glitch {
+  // ...
+}
+
+class ScanLines {
+  constructor(el) {
+    this.el = el;
+    this.update = this.update.bind(this);
+  }
+
+  update() {
+    this.el.style.opacity = Math.random() * 0.1;
+  }
+
+  start() {
+    setInterval(this.update, 150);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const el = document.querySelector('.glitch');
-  const glitch = new Glitch(el);
+  const glitchEl = document.querySelector('.glitch');
+  const glitch = new Glitch(glitchEl);
   glitch.start();
+
+  const scanLinesEl = document.querySelector('.scan-lines');
+  const scanLines = new ScanLines(scanLinesEl);
+  scanLines.start();
 });
