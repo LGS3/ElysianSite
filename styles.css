@@ -81,7 +81,7 @@ h2:hover {
   position: absolute;
   top: 67%;
   left: 67%;
-  transform: translate(-50%, -50%) scale(0.67); /* Scale down the image to 50% */
+  transform: translate(-50%, -50%) scale(0.50); /* Scale down the image to 50% */
   z-index: 999;
 }
 
