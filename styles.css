@@ -21,7 +21,6 @@ body {
   padding: 2rem;
 }
 
-
 /* Hero */
 #hero {
   background-color: #007BFF;
@@ -77,4 +76,17 @@ h2:hover {
   z-index: 9999;
 }
 
+/* Center and scale the image */
+#crest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5); /* Scale down the image to 50% */
+  z-index: 999;
+}
 
+#crest img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
