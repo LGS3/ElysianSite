@@ -1,7 +1,7 @@
 /* Reset */
 * {
-  margin: 01;
-  padding: 01;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -96,4 +96,3 @@ h2:hover {
   border-radius: 50%;
   overflow: hidden;
 }
-
