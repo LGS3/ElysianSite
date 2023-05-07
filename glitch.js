@@ -1,7 +1,7 @@
 class Glitch {
   constructor(el) {
     this.el = el;
-    this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     this.update = this.update.bind(this);
   }
 
@@ -10,15 +10,17 @@ class Glitch {
   }
 
   update() {
-    const newText = this.el.textContent.split('').map((char) => (Math.random() < 0.5 ? this.randomChar() : char)).join('');
-    this.el.textContent = newText;
+    const dataText = this.el.getAttribute('data-text');
+    let result = '';
+    for (let i = 0; i < dataText.length; i++) {
+      result += Math.random() < 0.1 ? this.randomChar() : dataText[i];
+    }
+    this.el.textContent = result;
   }
 
   start() {
-    setInterval(this.update, 50);
+    setInterval(this.update, 100);
   }
-}class Glitch {
-  // ...
 }
 
 class ScanLines {
