@@ -12,7 +12,7 @@
 body {
   font-family: 'Orbitron', sans-serif;
   line-height: 1.6;
-  background-color: #0f0f0f;
+  background-color: #ffffff; /* Change the background color to white */
   color: #1A1A1A;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   padding: 2rem;
 }
+
 
 /* Hero */
 #hero {
