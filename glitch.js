@@ -34,7 +34,7 @@ class ScanLines {
   }
 
   start() {
-    setInterval(this.update, 150);
+    setInterval(this.update, 75);
   }
 }
 
