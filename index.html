@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <title>ELYSIAN</title>
-  </head>
-  <body>
-    <section id="hero">
-      <div id="glitch-container">
-        <h1 class="glitch" data-text="ELYSIAN">ELYSIAN</h1>
-      </div>
-      <div id="crest-container">
-        <img src="overCrest.png" alt="Over Crest">
-      </div>
-      <h2 id="pending">PENDING</h2>
-      <div class="scan-lines"></div>
-    </section>
-    <script src="glitch.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>ELYSIAN</title>
+</head>
+<body>
+  <section id="hero">
+    <div id="glitch-container">
+      <h1 class="glitch" data-text="ELYSIAN">ELYSIAN</h1>
+    </div>
+    <div id="crest-container">
+      <img src="overCrest.png" alt="Over Crest">
+    </div>
+    <h2 id="pending">PENDING</h2>
+    <div class="scan-lines"></div>
+
+    <button id="create-invite-btn">Create Calendar Invite</button>
+    <form id="vote-form">
+      <label for="topic">Choose a Discussion Topic:</label>
+      <select id="topic" name="topic">
+        <option value="improving-usa">Improving the USA</option>
+        <option value="ai-alignment">AI Alignment</option>
+        <option value="cellular-automata">Cellular Automata</option>
+        <option value="suggest">Suggest Your Own</option>
+      </select>
+
+      <label for="restaurant">Choose a Restaurant:</label>
+      <select id="restaurant" name="restaurant">
+        <option value="japanese">Japanese</option>
+        <option value="french">French</option>
+        <option value="suggest">Suggest Your Own</option>
+      </select>
+
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <button type="submit">Submit Vote</button>
+    </form>
+  </section>
+  <script src="glitch.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
